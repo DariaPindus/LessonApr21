@@ -15,7 +15,7 @@ public class AlarmClock {
 
     public void setCurrentTime(int hours, int minutes, int seconds) {
         if (hours > 60 || minutes > 60 || seconds > 60)
-            System.out.println("Wrong data! STUPID");
+            System.out.println("Wrong data!");
         this.hours = hours;
         this.minutes = minutes;
         this.seconds = seconds;
@@ -55,7 +55,7 @@ public class AlarmClock {
         Random rnd=new Random();
         int time=rnd.nextInt(10);
         if(time==seconds){
-            System.out.println("Alarm has broken. Suffer");
+            System.out.println("Oops. Alarm has broken.");
             setToZero();
             return true;
         }
